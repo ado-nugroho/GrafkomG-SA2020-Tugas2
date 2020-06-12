@@ -28,6 +28,14 @@ void garis(double jari, int vertex, double x1, double x2, double y1, double y2, 
 	}
 }
 
+void planet(double x, double y, float size, int r, int g, int b) {
+	glColor3ub(r, g, b);
+	glPointSize(size);
+	glBegin(GL_POINTS);
+	glVertex2d(x, y);
+	glEnd();
+}
+
 void display() {
 	glClear(GL_COLOR_BUFFER_BIT);
 
@@ -40,8 +48,15 @@ void display() {
 	garis(12, 60, sin(mar) * 160, 0, cos(mar) * 160, 0, "orbit");
 	garis(20, 60, sin(mar) * 160, 0, cos(mar) * 160, 0, "orbit");
 
+	planet(0.0, 0.0, 50.0f, 255, 255, 0);
+	planet(sin(mer) * 30, cos(mer) * 30, 10.0f, 117, 115, 108);
+	planet(sin(ven) * 60, cos(ven) * 60, 15.0f, 189, 47, 0);
+	planet(sin(bum) * 110, cos(bum) * 110, 25.0f, 6, 96, 148);
+	planet(sin(bum) * 110 + (sin(bul) * 12), cos(bum) * 110 + (cos(bul) * 12), 3.0f, 117, 115, 108);
 
-	
+	planet(sin(mar) * 160, cos(mar) * 160, 20.0f, 171, 88, 0);
+	planet(sin(mar) * 160 + (sin(pho) * 12), cos(mar) * 160 + (cos(pho) * 12), 1.0f, 117, 115, 108);
+	planet(sin(mar) * 160 + (sin(dei) * 20), cos(mar) * 160 + (cos(dei) * 20), 2.0f, 117, 115, 108);
 
 	
 	glutSwapBuffers();

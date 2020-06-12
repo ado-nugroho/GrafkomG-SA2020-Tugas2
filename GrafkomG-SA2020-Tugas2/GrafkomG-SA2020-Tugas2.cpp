@@ -65,11 +65,11 @@ void display() {
 	planet(sin(mer) * 30, cos(mer) * 30, 10.0f, 117, 115, 108);
 	planet(sin(ven) * 60, cos(ven) * 60, 15.0f, 189, 47, 0);
 	planet(sin(bum) * 110, cos(bum) * 110, 25.0f, 6, 96, 148);
-	planet(sin(bum) * 110 + (sin(bul) * 12), cos(bum) * 110 + (cos(bul) * 12), 3.0f, 117, 115, 108);
+	planet(sin(bum) * 110 + (sin(bul) * 12), cos(bum) * 110 + (cos(bul) * 12), 5.0f, 117, 115, 108);
 
 	planet(sin(mar) * 160, cos(mar) * 160, 20.0f, 171, 88, 0);
-	planet(sin(mar) * 160 + (sin(pho) * 12), cos(mar) * 160 + (cos(pho) * 12), 1.0f, 117, 115, 108);
-	planet(sin(mar) * 160 + (sin(dei) * 20), cos(mar) * 160 + (cos(dei) * 20), 2.0f, 117, 115, 108);
+	planet(sin(mar) * 160 + (sin(pho) * 12), cos(mar) * 160 + (cos(pho) * 12), 3.0f, 117, 115, 108);
+	planet(sin(mar) * 160 + (sin(dei) * 20), cos(mar) * 160 + (cos(dei) * 20), 4.0f, 117, 115, 108);
 
 	
 	glutSwapBuffers();
